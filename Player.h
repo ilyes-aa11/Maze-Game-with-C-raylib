@@ -3,7 +3,6 @@
 #include "Maze.h"
 #include "DrawFunctions.h"
 #include <cmath>
-#include <iostream>
 
 class Maze;
 
