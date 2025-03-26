@@ -52,8 +52,3 @@ bool Player::EndCheck(const Vector2 &end)
 {
     return floor(x) == end.x && floor(y) == end.y;
 }
-
-void Player::PrintCoordinates()
-{
-    std::cout << x << " : " << y << std::endl;
-}
