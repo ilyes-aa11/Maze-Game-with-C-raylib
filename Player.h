@@ -22,7 +22,6 @@ public:
     float GetX();
     float GetY();
     bool EndCheck(const Vector2& end);
-    void PrintCoordinates();
 
     friend void DrawPlayer(const Player&);
 };
