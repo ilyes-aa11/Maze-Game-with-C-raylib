@@ -17,7 +17,7 @@ void Player::MoveUp(const Maze &maze, float dt) {
 void Player::MoveDown(const Maze &maze, float dt) {
     int cellx = floor(x);
     int celly = floor(y);
-    if(maze.grid[celly][cellx].bottom_wall && y + 0.25 + speed*dt > float(celly+1)) y = celly+1 - 0.25;// to avoid segmentation faults
+    if(maze.grid[celly][cellx].bottom_wall && y + 0.25 + speed*dt > float(celly+1)) y = celly+1 - 0.25;
     
     else y += speed * dt;
 }
@@ -25,7 +25,7 @@ void Player::MoveDown(const Maze &maze, float dt) {
 void Player::MoveRight(const Maze &maze, float dt) {
     int cellx = floor(x);
     int celly = floor(y);
-    if(maze.grid[celly][cellx].right_wall && x + 0.25 + speed*dt > float(cellx+1)) x = cellx+1 - 0.25;// to avoid segmentation faults
+    if(maze.grid[celly][cellx].right_wall && x + 0.25 + speed*dt > float(cellx+1)) x = cellx+1 - 0.25;
     
     else x += speed * dt;
 }
