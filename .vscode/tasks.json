@@ -9,9 +9,9 @@
                 "-g",
                 "*.cpp",
                 "-I",
-                "C:/raylib/raylib/src",        // <-- Include raylib.h from src
+                "C:/raylib/raylib/src",        // <-- Include raylib.h from src (provide your own directory of the raylib library)
                 "-L",
-                "C:/raylib/raylib/src",        // <-- Link from src if libraylib.a is here
+                "C:/raylib/raylib/src",        // <-- Link from src if libraylib.a is here (provide your own directory of the raylib library)
                 "-lraylib",
                 "-lopengl32",
                 "-lwinmm",
